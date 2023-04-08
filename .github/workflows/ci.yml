@@ -5,10 +5,11 @@ on:
   push:
     paths:
       - "**.js"
+      - "**/package.json"
 
 jobs:
-  check_pr:
-    name: "check pr"
+  test-pr-template-verifier:
+    name: check-pr
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -16,3 +17,4 @@ jobs:
       - name: install npm
         uses: actions/setup-node@v3
       - run: npm install
+      - run: npm test
