@@ -6,8 +6,7 @@ on:
       - "**.ts"
       - "**/package.json"
 jobs:
-  test-pr-template-verifier:
-    name: check-pr
+  test-js:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code

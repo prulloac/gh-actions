@@ -3,8 +3,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  test-pr-template-verifier:
-    name: check-pr
+  pr-template-verifier:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
